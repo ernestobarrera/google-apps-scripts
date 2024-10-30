@@ -1,9 +1,9 @@
-function onOpen() {
-  var ui = SlidesApp.getUi();
-  ui.createMenu("📎 Enlaces")
-    .addItem("Extraer enlaces a hoja de cálculo", "extractLinksFromSlides")
-    .addToUi();
-}
+/**
+ * Google Slides link extractor
+ * @author Ernesto Barrera
+ * @version 1.0.0
+ * @lastUpdate 2024-10-30
+ */
 
 function extractLinksFromSlides() {
   // Abre la presentación activa y obtiene su nombre
