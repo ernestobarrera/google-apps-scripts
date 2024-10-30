@@ -35,14 +35,52 @@ Este repositorio contiene scripts y herramientas para automatizar tareas en el e
 
 ```mermaid
 graph TD;
-    A[Google Apps Scripts] --> B[📊 sheets];
-    A --> C[📑 slides];
-    A --> D[📝 docs];
-    A --> E[🤖 automation];
-    A --> F[🎨 formatting];
-    A --> G[🔄 integration];
-    A --> H[🛠️ utilities];
+    A[Google Apps Scripts] --> B[📊 sheets/];
+    A --> C[📑 slides/];
+    A --> D[📝 docs/];
+    A --> E[🤖 automation/];
+    A --> F[🎨 formatting/];
+    A --> G[🔄 integration/];
+    A --> H[🛠️ utilities/];
 
-    C --> I[slide-numbering];
-    I --> J[Numeración Automática];
+    C --> I[slide-numbering/]
+    C --> J[link-extractor/]
+    C --> K[code.gs]
+
+    I --> L[Numeración Automática]
+    J --> M[Extractor de Enlaces]
+    K --> N[Menús Combinados]
+
+    style C fill:#f9f,stroke:#333,stroke-width:2px
+    style I fill:#bbf,stroke:#333,stroke-width:1px
+    style J fill:#bbf,stroke:#333,stroke-width:1px
+    style K fill:#bfb,stroke:#333,stroke-width:1px
 ```
+
+## 📑 Utilidades de Presentaciones
+
+### Numeración de Diapositivas
+
+- 📝 Numeración automática en esquina inferior derecha
+- 🔄 Actualización con un solo clic
+- 👻 Salta diapositivas ocultas
+- [Más información](slides/slide-numbering/README.md)
+
+### Extractor de Enlaces
+
+- 📊 Extracción de enlaces a hojas de cálculo
+- 🔍 Detecta enlaces en textos, formas y tablas
+- 📋 Formato automático de resultados
+- [Más información](slides/link-extractor/README.md)
+
+## 🤝 Contribuciones
+
+Las contribuciones son bienvenidas. Por favor:
+
+1. Revisa las guías de contribución específicas de cada módulo
+2. Crea un issue para discutir cambios mayores
+3. Asegúrate de mantener la estructura del repositorio
+
+## 📄 Licencia
+
+Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
